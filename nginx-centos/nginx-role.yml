@@ -1,0 +1,7 @@
+---
+- hosts: web
+  sudo: yes
+  remote_user: root
+  roles:
+    - nginx-centos
+

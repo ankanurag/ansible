@@ -1,0 +1,16 @@
+---
+- name: nginx install
+  yum: 
+    name: "{{nginx_url}}"
+    state: installed
+    update_cache: true
+
+- name: copy the server configuration file
+  template:
+    src: "../templates/nginx-application.conf"
+    dest: "{{nginx_server_conf_path}}"
+
+- name: start nginx service
+  service:
+    name: nginx
+    state: started
