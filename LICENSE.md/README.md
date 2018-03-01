@@ -1,2 +1,0 @@
-# ansible
-Contains ansible playbook
