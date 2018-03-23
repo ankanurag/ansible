@@ -1,0 +1,5 @@
+---
+tomcat_path: "/opt/tomcats/"
+#tomcat_url: "http://redrockdigimark.com/apachemirror/tomcat/tomcat-7/v7.0.85/bin/apache-tomcat-7.0.85-deployer.zip"
+tomcat_url: "http://archive.apache.org/dist/tomcat/tomcat-7/v7.0.61/bin/apache-tomcat-7.0.61.tar.gz"
+tomcat_dest_path: "/opt/"
