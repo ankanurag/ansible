@@ -1,0 +1,7 @@
+---
+- hosts: [assessment]
+  gather_facts: yes #IMPORTANT
+  sudo: yes
+  remote_user: ec2-user
+  roles:
+    - filebeats-linux

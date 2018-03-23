@@ -1,0 +1,7 @@
+---
+- name: Download filebeats and install
+  get_url:
+    url: "https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-6.2.1-x86_64.rpm"
+    dest: "/opt/"
+- name: Install filebeat rpm
+  command: rpm -ivh /opt/filebeat-6.2.1-x86_64.rpm
