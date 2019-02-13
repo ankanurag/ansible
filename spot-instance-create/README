@@ -1,0 +1,6 @@
+Step for Launch AWS Instance:-
+
+1. First clone code.
+2. Configure variable in main.yml (spot-instance-create/spot-instance-create/defailts/main.yml) as per your requirement.
+3. Now, Run command:- 
+    ansible-playbook role.yml
