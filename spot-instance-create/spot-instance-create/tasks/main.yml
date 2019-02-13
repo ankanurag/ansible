@@ -1,0 +1,21 @@
+---
+- name: Create Instance
+  ec2:
+    aws_access_key: "{{ aws-access-key }}"
+    aws_secret_key: "{{ aws-secret-key }}"
+    region: "{{ aws-region }}"
+    spot_price: "{{ spot-price }}"
+    spot_type: persistent
+    spot_wait_timeout: 600
+    key_name: "{{ aws-key-name }}" 
+    instance_type: "{{ aws-instance-type }}"
+    image: "{{ ami_id }}"
+    wait: yes
+    group: [ 'default' ]
+    count: 1
+    vpc_subnet_id: "{{ aws-subnet-id }}"
+    assign_public_ip: yes
+    tenancy: default
+    state: present
+
+

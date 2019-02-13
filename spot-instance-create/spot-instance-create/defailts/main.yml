@@ -1,0 +1,9 @@
+---
+aws-access-key: "AWS access Key"
+aws-secret-key: "AWS secret key"
+aws-region: "AWS region"
+spot-price: "AWS spot price"
+aws-key-name: "AWS key Name"
+aws-instance-type: "AWS Instance Type"
+ami_id: "AWS ami ID"
+aws-subnet-id: "AWS Subnet ID"
